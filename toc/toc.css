@@ -1,0 +1,117 @@
+.post-body ul {
+        padding: 0 0 0 15px;
+        margin: 10px 0
+    }
+    .rtl .post-body ul {
+        padding: 0 15px 0 0
+    }
+    .post-body li {
+        margin: 5px 0;
+        padding: 0
+    }
+    .post-body ul li,
+    .post-body ol ul li {
+        list-style: none
+    }
+    .post-body ul li:before {
+        display: inline-block;
+        content: '\2022';
+        margin: 0 5px 0 0
+    }
+    .rtl .post-body ul li:before {
+        margin: 0 0 0 5px
+    }
+    .post-body ol {
+        counter-reset: ify;
+        padding: 0 0 0 15px;
+        margin: 10px 0
+    }
+    .rtl .post-body ol {
+        padding: 0 15px 0 0
+    }
+    .post-body ol>li {
+        counter-increment: ify;
+        list-style: none
+    }
+    .post-body ol>li:before {
+        display: inline-block;
+        content: counters(ify, '.')'.';
+        margin: 0 5px 0 0
+    }
+    .rtl .post-body ol>li:before {
+        margin: 0 0 0 5px
+    }
+    #toc li a {
+        color: #4285f4;
+        font-weight: normal
+    }
+    .toc-wrap {
+        margin-top: 20px !important;
+        display: block;
+        width: 100%;
+        clear: both;
+        margin: 0
+    }
+    .toc-inner {
+        position: relative;
+        max-width: 100%;
+        background-color: rgba(155, 155, 155, 0.05);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        font-size: 14px;
+        color: var(--title-color);
+        line-height: 1.6em;
+        border-radius: 4px
+    }
+    a.toc-title {
+        position: relative;
+        height: 38px;
+        background-color: rgba(155, 155, 155, 0.05);
+        font-size: 16px;
+        color: #344955;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin: 0;
+        border-radius: 4px
+    }
+    a.toc-title.is-expanded {
+        border-radius: 4px 4px 0 0
+    }
+    .toc-title:after {
+        content: '\2261';
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 0 25px
+    }
+    .rtl .toc-title:after {
+        margin: 0 25px 0 0
+    }
+    .toc-title.is-expanded:after {
+        font-weight: 900
+    }
+    a.toc-title:hover {
+        text-decoration: none
+    }
+    #toc {
+        display: none;
+        padding: 8px 15px;
+        margin: 0
+    }
+    #toc ol {
+        padding: 0 0 0 15px
+    }
+    .rtl #toc ol {
+        padding: 0 15px 0 0
+    }
+    #toc li {
+        font-size: 14px;
+        margin: 7px 0
+    }
+    #toc li a:hover {
+        color: #4285f4;
+        text-decoration: underline
+    }
